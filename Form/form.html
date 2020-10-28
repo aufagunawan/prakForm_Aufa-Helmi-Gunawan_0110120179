@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FORM REGISTRASI SISWA</title>
+</head>
+<body style="margin-left: 400px;margin-right: 400px;font-family: arial; background-color: #7f8c8d">
+    <fieldset style="background-color:#ecf0f1 ;">
+        <h1>FORM REGISTRASI SISWA</h1><br>
+        <div align="left">
+        <form action="index.html" method="POST"></form>
+        <table>
+            <tr>
+                <td><label for="Nomor Registrasi">Nomor Registrasi :</label>
+                <input type="number" name="nomor" min="0" max="9999" placeholder="Masukan Nomor Registrasi" required></td>
+                <td><label for="Tanggal">Tanggal :</label>
+                <input type="date" name="Tanggal" required></td>
+            </tr>
+        </table>
+        </div>
+
+
+        <div>
+            <h3>INFORMASI PRIBADI</h3><hr>
+            <label for="Nama">NAMA &emsp; &emsp; &emsp; &nbsp;&nbsp;&nbsp;&nbsp;: </label>
+            <input type="text" name="Nama" placeholder="Masukan Nama Anda" required><br><br>
+            <label for="Tanggal Lahir">TANGGAL LAHIR :</label>
+            <input type="date" name="Tanggal Lahir" placeholder="Masukan Tanggal Lahir Anda" required><br><br>
+            <label for="Agama">AGAMA &emsp; &emsp; &emsp; &nbsp; :</label>
+                        <select name="Agama" required>
+                            <option value="1">Islam</option>
+                            <option value="1">Protestan</option>
+                            <option value="1">Katolik</option>
+                            <option value="1">Hindu</option>
+                            <option value="1">Buddha</option>
+                            <option value="1">Khonghucu</option>
+                        </select><br><br>
+            <label for="Jenis Kelamin">JENIS KELAMIN &nbsp; :</label>
+            <input type="radio" name="Jenis Kelamin" value="P" required>PRIA
+            <input type="radio" name="Jenis Kelamin" value="W" required>WANITA <br><br>
+            <label for="Status Perkawinan">STATUS PERKAWINAN :</label>
+                        <select name="Status Perkawinan" required>
+                            <option value="1">KAWIN</option>
+                            <option value="1">BELUM KAWIN</option>
+                        </select> <br><br>
+            <label for="Kewarganegaraan">KEWARGANEGARAAN :</label>
+                        <select name="Kewarganegaraan" required>
+                            <option value="1">INDONESIA</option>
+                            <option value="1">MALAYSIA</option>
+                            <option value="1">SINGAPURA</option>
+                            <option value="1">THAILAND</option>
+                            <option value="1">CHINA</option>
+                            <option value="1">KOREA SELATAN</option>
+                        </select> <br><br>
+            <label for="photo">PAS FOTO 3X4 &emsp; : </label><input type="file" name="photo"><br><br>
+            <label for="email">EMAIL &emsp; &emsp; &emsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; :</label>
+            <input type="email" name="email" placeholder="Masssukan Email Anda" required><br><br>
+            <label for="Nomor Telepon">NOMOR TELEPON :</label>
+            <input type="number" name="Nomor Telepon" placeholder="Masukan Nomor Telepon Anda" required><br>
+            <p>ALAMAT &emsp; &emsp; &nbsp; &nbsp; </p>
+            <textarea name="Alamat" cols="65" rows="4" placeholder="Masukan Alamat Anda" required></textarea>
+    
+        </div>
+        <br><br>
+
+        <div>
+            <h3>PILIH FAKULTAS</h3><hr>
+            <table>
+                <tr>
+                    <td><input type="checkbox" name="major1" value="1" required>ILMU KOMPUTER<br>
+                        <input type="checkbox" name="major2" value="1" required>SISTEM INFORMASI<br>
+                        <input type="checkbox" name="major3" value="1" required>TEKNIK INFORMATIKA<br>
+                        <input type="checkbox" name="major4" value="1" required>TEKNIK KOMPUTER<br>
+                        <input type="checkbox" name="major5" value="1" required>TEKNIK SIPIL<br>
+                        <input type="checkbox" name="major6" value="1" required>FISIKA</td>
+                </tr>
+            </table><br>
+        </div>
+        <button type="submit">KIRIM</button>
+        <button type="reset">BATAL</button>
+    </fieldset>
+</body>
+</html>
